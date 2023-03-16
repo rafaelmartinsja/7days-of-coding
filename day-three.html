@@ -5,19 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Day Three(3) of Seven(7) - Challenge 7 days of coding.</title>
 </head>
 
 <body>
   <script>
     let resposta = prompt("Você quer ser Dev Front-end(1) ou Back-end(2)? Digite 1 ou 2");
+    let respostaEspecializacaoFront;
+    let respostaEspecializacaBack;
+    let especializacao;
+    let novaLinguagem;
 
     if (resposta == 1)
-      alert('Nice! Você quer aprender React(R) ou Vue(V)')
+      respostaEspecializacaoFront = prompt('Nice! Você quer aprender React(R) ou Vue(V)')
     if (resposta == 2)
-      alert('Show! Então Java ou C#?')
+      respostaEspecializacaBack = prompt('Show! Você quer aprender Java(J) ou C#(C)?')
 
-    let especializacao = prompt("Você quer continuar se especializando como um dev Ou quer aprender ser Full Stack? Sim(S) ou Não(N)")
+    especializacao = prompt("Você quer continuar se especializando como um dev Ou quer aprender ser Full Stack? Sim(S) ou Não(N)")
 
     //let especializacao = prompt("Você quer continuar se especializando como um dev" + resposta + 'Ou quer aprender ser Full Stack? Sim(S) ou Não(N)')
 
@@ -26,7 +30,7 @@
     if (especializacao == N)
       alert('Boa, tá na moda ser Full Stack hoje em dia!')
 
-    let novaLinguagem = prompt("Tem mais alguma tecnologia que você gostaria de aprender? Sim(S) ou Não(N)");
+    novaLinguagem = prompt("Tem mais alguma tecnologia que você gostaria de aprender? Sim(S) ou Não(N)");
 
     if (novaLinguagem == S)
       alert('Vai amassar sabendo' + novaLinguagem);
